@@ -8,7 +8,20 @@ nav {
 .project-tagline {
 	color: red;
 }
-#mainPhoto {
+#mainPhoto, #familyPhoto, #contactUsPhoto{
 	max-width: 100%;
 	
+}
+#contactUsPhoto{
+	height: 200px;
+	width: 1140px;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+.glyphicon {
+    font-size: 40px;
+}
+textarea { 
+	resize: none;
 }
