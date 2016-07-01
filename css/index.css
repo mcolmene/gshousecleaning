@@ -8,3 +8,7 @@ nav {
 .project-tagline {
 	color: red;
 }
+#mainPhoto {
+	max-width: 100%;
+	
+}
