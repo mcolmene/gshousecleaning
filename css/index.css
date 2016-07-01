@@ -1,6 +1,10 @@
+nav {
+	margin-bottom: 0px;
+}
+
 #logo {
 	width: 30px;
 }
 .project-tagline {
-	color: blue;
+	color: red;
 }
