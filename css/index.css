@@ -2,9 +2,7 @@ nav {
 	margin-bottom: 0px;
 }
 
-#logo {
-	width: 30px;
-}
+
 .project-tagline {
 	color: red;
 }
@@ -12,11 +10,17 @@ nav {
 	max-width: 100%;
 	
 }
+.homePhotoPlaceHolder {
+	width: 80%;
+}
 #contactUsPhoto{
 	height: 200px;
-	width: 1140px;
+	width: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
+#contactPhotoContainer {
+	width: 1450px;
+}
+.center{
 	text-align: center;
 }
 .glyphicon {
@@ -24,4 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 textarea { 
 	resize: none;
+}
+.contact-glyphicon{
+	color:#55afef;
 }
