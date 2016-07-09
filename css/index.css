@@ -24,7 +24,7 @@ nav {
 .center{
 	text-align: center;
 }
-.glyphicon {
+.contact-glyphicon {
     font-size: 40px;
 }
 textarea { 
@@ -32,4 +32,18 @@ textarea {
 }
 .contact-glyphicon{
 	color:#55afef;
+}
+html {
+    position: relative;
+    min-height: 85%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0px;
+    width: 100%;
 }
