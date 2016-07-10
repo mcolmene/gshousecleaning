@@ -2,8 +2,36 @@ nav {
 	margin-bottom: 0px;
 	width: 100%;
 }
-
-
+ul {
+	list-style-type:none;
+	
+	padding : 2px;
+}
+ul li{
+	padding : 5px;
+	font-size: 16px;
+}
+hr {
+	margin-top: 10px !important;
+}
+a:link{
+    text-decoration: none !important; 
+    color: white !important;
+}
+a:visited {
+	text-decoration: none !important; 
+    color: white !important;
+}
+a:hover {
+	color: #55afef !important;
+}
+a:active {
+	text-decoration: none !important; 
+    color: white !important;
+}
+.footer-titles{
+	color: #55afef ;
+}
 .project-tagline {
 	color: red;
 }
@@ -26,12 +54,14 @@ nav {
 }
 .contact-glyphicon {
     font-size: 40px;
+    color:#55afef;
+}
+.about-glyphicon { 
+	font-size: 45px;
+	color:#55afef;
 }
 textarea { 
 	resize: none;
-}
-.contact-glyphicon{
-	color:#55afef;
 }
 html {
     position: relative;
