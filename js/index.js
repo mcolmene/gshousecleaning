@@ -14,5 +14,13 @@ $(document).ready(function(){
     		$(".listItems").attr("data-target", "");
 	    }
 	});
+	$(".faq-divs").click(function() {
+		$(this).find(".toggle-box").slideToggle("fast");
+		$(this).find("span").toggleClass("glyphicon-minus-sign");
+		$(this).find("span").toggleClass("glyphicon-plus-sign");
+		$(this).find("span").toggleClass("faq-glyphicon-open");
+		$(this).find("span").toggleClass("faq-glyphicon");
+		$(this).find("a div").toggleClass("open");
+	});
 		
 });
