@@ -14,18 +14,19 @@ ul li{
 hr {
 	margin-top: 10px !important;
 }
-a:link .faq-links{
+a:link, .faq-links{
     text-decoration: none !important; 
     color: #888888 !important;
 }
-a:visited .faq-links {
+a:visited, .faq-links {
 	text-decoration: none !important; 
     color: #888888 !important;
 }
-a:hover .faq-links{
+a:hover, .faq-links{
+	text-decoration: none !important; 
 	color: #55afef !important;
 }
-a:active .faq-links{
+a:active, .faq-links{
 	text-decoration: none !important; 
     color: white !important;
 }
