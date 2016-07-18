@@ -1,0 +1,105 @@
+nav {
+	margin-bottom: 0px;
+	width: 100%;
+}
+ul {
+	list-style-type:none;
+	
+	padding : 2px;
+}
+ul li{
+	padding : 5px;
+	font-size: 16px;
+}
+hr {
+	margin-top: 10px !important;
+}
+a:link, .faq-links{
+    text-decoration: none !important; 
+    color: #888888 !important;
+}
+a:visited, .faq-links {
+	text-decoration: none !important; 
+    color: #888888 !important;
+}
+a:hover, .faq-links{
+	text-decoration: none !important; 
+	color: #55afef !important;
+}
+a:active, .faq-links{
+	text-decoration: none !important; 
+    color: white !important;
+}
+
+.footer-titles{
+	color: #55afef ;
+}
+.project-tagline {
+	color: red;
+}
+#mainPhoto, #mainPhotoXs, #faqPhoto, #familyPhoto, #contactUsPhoto{
+	max-width: 100%;
+	
+}
+.homePhotoPlaceHolder {
+	width: 80%;
+}
+#contactUsPhoto{
+	height: 200px;
+	width: 100%;
+}
+#contactPhotoContainer {
+	width: 1450px;
+}
+.center{
+	text-align: center;
+}
+.contact-glyphicon {
+    font-size: 40px;
+    color:#55afef;
+}
+.about-glyphicon { 
+	font-size: 45px;
+	color:#55afef;
+}
+textarea { 
+	resize: none;
+}
+html {
+    position: relative;
+    min-height: 85%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0px;
+    width: 100%;
+}
+
+/*CSS for FAQ section*/
+.faq-divs {
+	padding: 5px;
+}
+.faq-glyphicon {
+	color: #55afef !important;
+}
+.faq-glyphicon-open{
+	color: white !important;
+}
+.toggle-box{
+	display: none;
+	/*box-shadow: 5px 5px 2.5px #888888;*/
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.open {
+	background-color: #55afef !important;
+	color: white !important;
+}
+.faq-links div{
+	margin-bottom: 0px !important;
+	border: 0px;
+}
