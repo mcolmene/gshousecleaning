@@ -79,6 +79,13 @@ footer {
     height: 0px;
     width: 100%;
 }
+/*CSS for pricing section*/
+.add-icons {
+	font-size: 60px !important;
+}
+.add-div {
+	height: 110px !important;
+}
 
 /*CSS for FAQ section*/
 .faq-divs {
