@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="icon" type="image/png" href="images/logo-inverse1.png">
     <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
   </head>
   <body>
   	<nav class="navbar navbar-inverse">
@@ -142,6 +143,9 @@
 		    <!--Start of 'How it works' tab-->
 		    <div role="tabpanel" class="tab-pane fade" id="howItWorks">
 		    	<div class="container">
+		    		<div>
+		    		<img id="faqPhoto" src="images/faq-pic-2.jpg"/>
+		    	</div>
 		    		<div class="col-md-12 well well-md">
 		    			<h2 class="center">Step 1</h2>
 		    			<p>Fill out the form or give us a call at (xxx) xxx-xxxx and let us know what type of service you would like</p>
@@ -165,16 +169,196 @@
 
 		    <!--Start of 'Pricing' tab-->
 		    <div role="tabpanel" class="tab-pane fade" id="pricing">
-		    	pricing
+		    	<div class="container">
+		    		<div>
+		    			<img id="faqPhoto" src="images/faq-pic-2.jpg"/>
+		    		</div>
+		    		<div class="row">
+		    			<div class="well well-md" style="height:100px">
+		    				
+		    			</div>
+		    		</div>
+		    		<div class="col-xs-12 col-md-9 well well-md">
+		    			<h3 class="center">Book your cleaning</h3>
+		    			<h4 class="center">Fill out the details below to get a price and schedule your cleaning</h4>
+		    			<hr>
+		    			<h4>Choose your service</h4>
+		    			<div class="row">
+		    				<h4>About your home</h4>
+		    			</div>
+		    			<div class="row">
+	    					<div class="col-xs-12 col-md-4">
+	    						<select class="form-control home-details" id="bedroom-select">
+	    							<option>How many bedrooms?</option>
+	    							<option>1 bedroom</option>
+	    							<option>2 bedrooms</option>
+	    							<option>3 bedrooms</option>
+	    							<option>4 bedrooms</option>
+	    							<option>5 bedrooms</option>
+	    							<option>6 bedrooms</option>
+	    						</select>
+	    					</div>
+	    					<div class="col-xs-12 col-md-4">
+	    						<select class="form-control home-details" id="bathroom-select">
+	    							<option value="0">How many bathrooms?</option>
+	    							<option value="1">1 bedroom</option>
+	    							<option value="2">2 bathrooms</option>
+	    							<option value="3">3 bathrooms</option>
+	    							<option value="4">4 bathrooms</option>
+	    							<option value="5">5 bathrooms</option>
+	    							<option value="6">6 bathrooms</option>
+	    						</select>
+	    					</div>
+		    				<div class="col-xs-12 col-md-4">
+	    						<select class="form-control home-details" id="size-select">
+	    							<option>How big is your house?</option>
+	    							<option>0-999sqft</option>
+	    							<option>1000-1600sqft</option>
+	    							<option>1600-2000sqft</option>
+	    							<option>2000+sqft</option>
+	    						</select>
+	    					</div>
+	    					
+		    			</div>
+		    			<hr>
+		    			<div class="row">
+		    				<h4>How Often</h4>
+		    			</div>
+		    			<div class="row">
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control occurence" >One Time</a>
+		    				</div>
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control occurence" >Weekly</a>
+		    				</div>
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control occurence" >Bi-weekly</a>
+		    				</div>
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control occurence" >Monthly</a>
+		    				</div>
+		    			</div>
+		    			<hr>
+		    			<div class="row">
+		    				<h4>Service Type</h4>
+		    			</div>
+		    			<div class="row">
+
+		    			</div>
+		    			<hr>
+		    			<div class="row">
+		    				<h4>Additional Services</h4>
+		    			</div>
+		    			<div class="row">
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control add-div">
+		    						<div class="row">
+		    							<img src="images/pet.png" style="width:55px; height:60px;">
+		    						</div>
+		    						<br>
+		    						<span>Pet Cleanup</span>
+		    					</a>
+		    				</div>
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control add-div">
+		    						<div class="row">
+		    							<img src="images/fridge.png" style="width:55px; height:60px;">
+		    						</div>
+		    						<br>
+		    						<span>Inside Fridge</span>
+		    					</a>
+		    				</div>
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control add-div">
+		    						<div class="row">
+		    							<img src="images/oven1.png" style="width:55px; height:60px;">
+		    						</div>
+		    						<br>
+		    						<span>Inside Oven</span>
+		    					</a>
+		    				</div>
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control add-div">
+		    						<div class="row">
+		    							<img src="images/blinds.png" style="width:55px; height:60px;">
+		    						</div>
+		    						<br>
+		    						<span>Clean Blinds</span>
+		    					</a>
+		    				</div>
+		    			</div>
+		    			<br>
+		    			<div class="row">
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control add-div">
+		    						<div class="row">
+		    							<img src="images/windows.png" style="width:55px; height:60px;">
+		    						</div>
+		    						<br>
+		    						<span>Interior Windows</span>
+		    					</a>
+		    				</div>
+		    				<div class="col-xs-6 col-md-3">
+								<a href="#/" class="btn btn-default form-control add-div">
+		    						<div class="row">
+		    							<img src="images/cabinets.png" style="width:55px; height:60px;">
+		    						</div>
+		    						<br>
+		    						<span>Inside Cabinets</span>
+		    					</a>		    				</div>
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control add-div">
+		    						<div class="row">
+		    							<i class="fa fa-paw add-icons"></i>
+		    						</div>
+		    						<br>
+		    						<span>Pet Cleanup</span>
+		    					</a>
+		    				</div>
+		    				<div class="col-xs-6 col-md-3">
+		    					<a href="#/" class="btn btn-default form-control add-div">
+		    						<div class="row">
+		    							<i class="fa fa-paw add-icons"></i>
+		    						</div>
+		    						<br>
+		    						<span>Pet Cleanup</span>
+		    					</a>
+		    				</div>
+		    			</div>
+		    			<hr>
+		    		</div>
+		    		<div class="col-xs-12 col-md-3">
+		    			<div class="col-md-12 well well-md">
+			    			<div class="col-md-12 center">
+			    				<h3 class="center">Service Summary</h3>
+			    				<hr>
+			    				<div id="service-summary">
+			    					Nothing Selected
+			    				</div>
+			    				<hr>
+			    				<h4>Estimated Cost:</h4>
+			    				<h3 id="estimate-cost"></h3>
+			    				<div>$<span id="service-total">0.00</span></div>
+			    			</div>
+		    			</div>
+		    			<div class="col-md-12 well well-md">
+			    			<div class="col-md-12 center">
+			    				<i class="fa fa-check-square-o add-icons"></i>
+			    				<h3 class="center">100% Guaranteed</h3>
+			    			</div>
+			    			<p>If you're not happy with your service, contact us and we will fix it. If you're still not happy we will refund you your money</p>
+		    			</div>
+		    		</div>
+		    	</div>
 		    </div>
 		    <!--End of 'pricing'-->
 
 		     <!--Start of 'contact us' tab-->
 		    <div role="tabpanel" class="tab-pane fade" id="contactUs">
 		    	<div class="container">
-		    		<div class="col-md-12 photoContainer">
-		    			<img id="contactUsPhoto" src="images/contact-us1.jpg">
-		    		</div>
+		    		<div>
+		    		<img id="faqPhoto" src="images/faq-pic-2.jpg"/>
+		    	</div>
 		    	</div>
 		    	<br>
 		    	<div class="container">
@@ -265,10 +449,11 @@
 		    	<div>
 		    		<img id="faqPhoto" src="images/faq-pic-2.jpg"/>
 		    	</div>
-		    	<div class="row">
+		    	
 		    	<div class="row center">
 		    		<h3>Frequently Asked Questions</h3>
 		    	</div>
+		    	<div class="row">
 		    		<div class="col-xs-12 col-md-6">
 		    			<h4>Booking</h4>
 		    			<div class="faq-divs col-md-12">
@@ -514,6 +699,7 @@
     <!--MODAL SECTION END-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/dust-full.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     
   </body>
