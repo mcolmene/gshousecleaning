@@ -91,6 +91,9 @@ footer {
 .faq-divs {
 	padding: 5px;
 }
+.faq-header {
+	padding : 10px;
+}
 .faq-glyphicon {
 	color: #55afef !important;
 }
