@@ -86,7 +86,13 @@ footer {
 .add-div {
 	height: 110px !important;
 }
-
+.selected {
+	background-color: #55afef !important;
+	color: white !important;
+}
+.selected-text {
+	color: white !important;
+}
 /*CSS for FAQ section*/
 .faq-divs {
 	padding: 5px;
