@@ -345,8 +345,8 @@
 		    			<hr>
 		    		</div>
 		    		<div class="col-xs-12 col-md-3">
-		    			<div class="col-md-12 well well-md">
-			    			<div class="col-md-12 center">
+		    			<div class="col-md-12 well well-md" >
+			    			<div class="col-md-12 center" >
 			    				<h3 class="center">Service Summary</h3>
 			    				<hr>
 			    				<div id="service-summary">
@@ -358,7 +358,7 @@
 			    				<div>$<span id="service-total">0.00</span></div>
 			    			</div>
 		    			</div>
-		    			<div class="col-md-12 well well-md">
+		    			<div class="col-md-12 well well-md" >
 			    			<div class="col-md-12 center">
 			    				<i class="fa fa-check-square-o add-icons"></i>
 			    				<h3 class="center">100% Guaranteed</h3>
@@ -467,10 +467,9 @@
 		    		<img id="faqPhoto" src="images/faq-pic-2.jpg"/>
 		    	</div>
 		    	
-		    	<div id="chart">
+		    	<div id="faqsDiv">
 		    		
 		    	</div>
-
 		    	<!--Still have questions section-->
 		    	<div class="row">
 		    		
@@ -553,12 +552,12 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel">Coupons</h4>
+		        <h4 class="modal-title center" id="myModalLabel">Coupons</h4>
 		      </div>
-		      <div class="modal-body">
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      <div class="modal-body" id="couponsDiv">
+		      	<div >
+		      		
+		      	</div>
 		      </div>
 		    </div>
 		  </div>
@@ -571,7 +570,17 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/dust-full.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/dust" id="hello">
+    <script type="text/dust" id="couponsTemplate">
+    <h3 class="center">{couponHeader}</h3>
+    {#coupons}
+	<div class="col-xs-12 col-md-6 coupons">
+		<h1 class="center">{couponValue}</h1>
+		<h3 class="center">{coupon}</h3>
+		<p>{description}</p>
+	</div>
+	{/coupons}
+    </script>
+    <script type="text/dust" id="faqsTemplate">
     <div class="row center">
         <h3>Frequently Asked Questions</h3>
     </div>
@@ -646,103 +655,7 @@
         {/additional}
     </div>
     </script>
-    <script type="text/javascript">
-    var src = document.getElementById('hello').textContent;
-    // Compile the template under the name 'hello'
-    var data = {
-       "faqHeaders" : [
-           {
-               "header1" : "Booking",
-               "header2" : "Pricing",
-               "header3" : "The day of cleaning",
-               "header4" : "Additional Services"
-           }
-       ],
-       "booking" : [
-           {
-               "faq" : " How does booking work?",
-               "answer": "we are going to put something here 1",
-               "id" : "1"
-           },
-           {
-               "faq" : " How can I know which days are available to get my house cleaned?",
-               "answer": "we are going to put something here 2",
-                "id" : "2"
-           },
-           {
-               "faq" : " hello we are number 3",
-               "answer": "we are going to put something here 3",
-                "id" : "3"
-           }
-       ],
-        "pricing" : [
-           {
-               "faq" : " How do you calculate the price of the service?",
-               "answer": "we are going to put something here 1",
-                "id" : "1"
-           },
-           {
-               "faq" : " Do you have a cancelation policy?",
-               "answer": "we are going to put something here 2",
-                "id" : "2"
-           },
-           {
-               "faq" : " What method of payment do you accept?",
-               "answer": "we are going to put something here 3",
-                "id" : "3"
-           },
-            {
-               "faq" : " How do I use a coupon or a referral discount?",
-               "answer": "we are going to put something here 3",
-                "id" : "4"
-           }
-       ],
-        "cleaning" : [
-            {
-               "faq" : " How many cleaners should arrive for my appointment?",
-               "answer": "we are going to put something here 1",
-                "id" : "1"
-           },
-           {
-               "faq" : " How long will my cleaning appointment take?",
-               "answer": "we are going to put something here 2",
-                "id" : "2"
-           },
-           {
-               "faq" : " Do I need to be home during the cleaning?",
-               "answer": "we are going to put something here 3",
-                "id" : "3"
-           },
-           {
-               "faq" : " What will the cleaners not clean in a standard service?",
-               "answer": "we are going to put something here 3",
-                "id" : "4"
-           }
-        ],
-        "additional" : [
-            {
-               "faq" : " What are considered additional services?",
-               "answer": "we are going to put something here 1",
-                "id" : "1"
-           },
-           {
-               "faq" : " How can I know which days are available to get my house cleaned?",
-               "answer": "we are going to put something here 2",
-                "id" : "2"
-           }
-        ]
-    }
-    dust.renderSource(src, data, function(err, out) { 
-        $("#chart").append(out);
-    });
-    /*var compiled = dust.compile(src, 'hello');
-    // Register the template with Dust
-    dust.loadSource(compiled);
-    // Render the template
-    dust.render('hello', { world: "sas" }, function(err, out) {
-      // `out` contains the rendered output.
-      $("#chart").append(out);
-    });*/
-    </script>
+   <script type="text/javascript" src="js/faqs.js"></script>
+   <script type="text/javascript" src="js/coupons.js"></script>
   </body>
 </html>

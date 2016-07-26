@@ -79,6 +79,14 @@ footer {
     height: 0px;
     width: 100%;
 }
+/*CSS for coupons*/
+.coupons {
+	border-style: dashed;
+	border-width: 5px;
+
+}
+#couponBody{
+}
 /*CSS for pricing section*/
 .add-icons {
 	font-size: 60px !important;
@@ -93,6 +101,7 @@ footer {
 .selected-text {
 	color: white !important;
 }
+
 /*CSS for FAQ section*/
 .faq-divs {
 	padding: 5px;
