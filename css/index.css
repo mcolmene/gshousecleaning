@@ -85,13 +85,17 @@ footer {
 	border-width: 5px;
 
 }
-
 	#couponsDiv {
 		height: 700px;
 	}
-	.carousel-img{
-		height: 400px;
+	@media screen and (max-width: 660px) {
+.carousel-img{
+		height: 225px !important;
+		width: 100% !important;
 	}
+		
+	}
+	
 @media screen and (min-width: 368px){
 	#couponsDiv {
 		height: 650px;
