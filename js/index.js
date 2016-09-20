@@ -53,7 +53,10 @@ $(document).ready(function(){
 		var $this = $(this);
 		$this.toggleClass("selected").find("span").toggleClass("selected-text");
 	});
-	
+   console.log($("#howItWorks").length);
+   $('#howItWorks').click(function(){
+   		console.log("hello")
+   })
 	var bedroomFlag, bathroomFlag, sizeFlag = false;
 	var prevBedTotal = 0;
 	$(".home-details").change(function(){

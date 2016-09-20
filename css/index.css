@@ -2,6 +2,14 @@ nav {
 	margin-bottom: 0px;
 	width: 100%;
 }
+#businessName {
+	
+    font-family: Brush Script MT, cursive;
+    float: left;
+    color: white;
+    margin-top: 15px;
+    font-size: 30px;
+}
 ul {
 	list-style-type:none;
 	
