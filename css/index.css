@@ -171,7 +171,9 @@ footer {
 	position: relative;
     float: left;
 }
-
+.stepSubDetails {
+	    padding: 0px 10px;
+}
 
 @media screen and (max-width: 660px) {
 	.pricingHeaders {
@@ -279,9 +281,12 @@ footer {
 	color : #0054a6;
 }
 /* Contact us */
-#contactInfoContainer {
-	margin-left: 22%;
+@media screen and (min-width: 830px) {
+	#contactInfoContainer {
+	margin-left: 19%;
 }
+}
+
 /*CSS for Careers modal*/
 #careerBody h3 {
 	margin-top: 0px;
