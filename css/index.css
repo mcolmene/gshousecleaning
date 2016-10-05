@@ -11,13 +11,28 @@ nav {
 .white{
 	color: white !important;
 }
-#businessName {	
+@media screen and (max-width: 660px) {
+	#businessName {	
     font-family: GillSans-Italic;
+    float: left;
+    color: white;
+    margin-top: 10px;
+    font-size: 25px;
+}
+	.navbar-brand {
+		padding-top: 5px !important;
+	}
+}
+@media screen and (min-width: 830px) {
+	#businessName {	
+    font-family: brush script MT;
     float: left;
     color: white;
     margin-top: 15px;
     font-size: 30px;
 }
+}
+
 ul {
 	list-style-type:none;
 	
