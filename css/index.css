@@ -1,10 +1,18 @@
+/*Modal css*/
+.modal-header {
+	color: white;
+    background: #0054ab
+}
+
 nav {
 	margin-bottom: 0px;
 	width: 100%;
 }
-#businessName {
-	
-    font-family: Brush Script MT, cursive;
+.white{
+	color: white !important;
+}
+#businessName {	
+    font-family: Brush Script MT;
     float: left;
     color: white;
     margin-top: 15px;
@@ -133,9 +141,85 @@ footer {
 }
 #couponBody{
 }
+/*CSS for how it works*/
+#howItWorksTitle {
+	border: none;
+	float: none;
+	text-align: center;
+}
+.servicesContainer{
+	width: 100%;
+	float: left;
+}
+.stepContainer {
+	margin: 15px 0px;
+	position: relative;
+    float: left;
+}
+
+
+@media screen and (max-width: 660px) {
+	.pricingHeaders {
+	font-size: 40px;
+	float: left;
+    border-top: 2px solid #e0e0e0;
+}
+	.stepTitle{
+	font-size: 40px;
+	float: left;
+	margin-right: 8px;
+}
+	.stepDetails {
+	border: 2px solid #e0e0e0;
+	box-shadow: 0px 6px 6px 1px #888888;
+	width: 100%;
+	float: right;
+}
+.stepNumber {
+	border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 34px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+}
+@media screen and (min-width: 830px) {
+	.pricingHeaders {
+	font-size: 40px;
+	float: left;
+}
+	.stepTitle{
+	font-size: 65px;
+	float: left;
+	margin-right: 8px;
+}
+	.stepDetails {
+	border: 2px solid #e0e0e0;
+	box-shadow: 0px 6px 6px 1px #888888;
+	width: 75%;
+	float: right;
+}
+.stepNumber {
+	border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 50px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+}
+}
+
+
 /*CSS for pricing section*/
 .add-icons {
 	font-size: 60px !important;
+	color: #55afef;
 }
 .add-div {
 	height: 110px !important;
@@ -147,7 +231,62 @@ footer {
 .selected-text {
 	color: white !important;
 }
+#pricingContainer, #summaryContainer, #guranteeContainer, #contactInfoContainer{
+	border: 2px solid #e0e0e0;
+	box-shadow: 0px 1px 0px 1px #888888;
+	margin : 10px 0px;
+}
+.servicesDiv{
+	box-shadow : 0px 1px 0px 0px #888888;
+	border: 1px solid #e0e0e0;
+	margin : 5px 0px;
+	font-size: 10px;
+	height: 320px;
+}
+.servicesDiv ul li:before {
+	content: ">"; /* Insert content that looks like bullets */
+ 	padding-right: 4px;
+    color: #0595cc; /* Or a color you prefer */
 
+}
+@media screen and (max-width: 660px) {
+	.servicesDiv ul li {
+		font-size: 13px;
+	}
+}
+@media screen and (min-width: 830px) {
+	.servicesDiv ul li {
+		font-size: 14px;
+	}
+}
+.
+.servicesDiv h4 {
+	color : #0054a6;
+}
+/* Contact us */
+#contactInfoContainer {
+	margin-left: 22%;
+}
+/*CSS for Careers modal*/
+#careerBody h3 {
+	margin-top: 0px;
+}
+#careerBody p {
+	font-weight: bold;
+}
+#careerBody ul {
+	line-height: 5px;
+	margin-left: 15px;
+}
+#careerBody ul li ul li {
+	list-style-type: circle;
+}
+#careerBody ul li{
+	list-style-type: disc;
+}
+#careerBody ul li ul li, #careerBody ul li{
+	font-size: 12px;
+}
 /*CSS for FAQ section*/
 .faq-divs {
 	padding: 5px;
