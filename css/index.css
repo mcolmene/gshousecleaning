@@ -17,12 +17,24 @@ nav {
     float: left;
     color: white;
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 22px;
 }
 	.navbar-brand {
 		padding-top: 5px !important;
 	}
 }
+@media screen and (min-width: 660px) and (max-width: 830px){
+		#businessName {	
+    font-family: GillSans-Italic;
+    float: left;
+    color: white;
+    margin-top: 10px;
+    font-size: 25px;
+}
+	.navbar-brand {
+		padding-top: 5px !important;
+	}
+	}
 @media screen and (min-width: 830px) {
 	#businessName {	
     font-family: brush script MT;
@@ -176,6 +188,41 @@ footer {
 }
 
 @media screen and (max-width: 660px) {
+	#bedroom-select {
+		margin-bottom: 15px;
+	}
+	.pricingHeaders {
+	font-size: 40px;
+	float: left;
+    border-top: 2px solid #e0e0e0;
+}
+	.stepTitle{
+	font-size: 40px;
+	float: left;
+	margin-right: 8px;
+}
+	.stepDetails {
+	border: 2px solid #e0e0e0;
+	box-shadow: 0px 6px 6px 1px #888888;
+	width: 100%;
+	float: right;
+}
+.stepNumber {
+	border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 34px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+}
+@media screen and (min-width: 660px) and (max-width: 830px){
+	#bedroom-select {
+		margin-bottom: 15px;
+	}
 	.pricingHeaders {
 	font-size: 40px;
 	float: left;
@@ -234,6 +281,17 @@ footer {
 
 
 /*CSS for pricing section*/
+#costText {
+	font-size: 24px;
+	margin-bottom: 10px;
+	border: 2px solid #e0e0e0;
+}
+#costReset {
+	margin-bottom: 5px;
+}
+#estimateDisclaimer {
+	font-size: 11.5px;
+}
 .add-icons {
 	font-size: 60px !important;
 	color: #55afef;
@@ -267,6 +325,11 @@ footer {
 
 }
 @media screen and (max-width: 660px) {
+	.servicesDiv ul li {
+		font-size: 13px;
+	}
+}
+@media screen and (min-width: 660px) and (max-width: 830px){
 	.servicesDiv ul li {
 		font-size: 13px;
 	}

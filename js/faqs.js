@@ -31,7 +31,7 @@
            },
            {
                "faq" : " Do you have a cancelation policy?",
-               "answer": "Yes. Our cancelation policy is we require at least a 24 hour notice of an cancelation. If it is within the 24 hour window there will be a cancelation fee of 20% of the total cost of the day's service.",
+               "answer": "Yes. Our cancelation policy is we require at least a 24 hour notice of a cancelation. If it is within the 24 hour window there will be a cancelation fee of 50% of the total cost of the day's service.",
                 "id" : "2"
            },
            {
@@ -68,7 +68,7 @@
            },
            {
                "faq" : " Do I tip the house cleaners?",
-               "answer": "There is no need to tip the cleaners since they are paid employees of G & S House Cleaning ",
+               "answer": "There is no need to tip the cleaners since they are paid employees of G & S House Cleaning.",
                 "id" : "4"
            }
         ],
@@ -87,7 +87,7 @@
         "other" : [
             {
                "faq" : " Air conditioning, electricity, hot water and Lock-outs",
-               "answer": "All appointments must allow the cleaners to have access to the property during the appointment time.  Customers must also ensure there is electricity and hot water in the home. In addition, the air conditioning in the home must be functioning between the months of April and November. If any of the these conditions are not met by the customer, the cleaners may choose to not complete the service and Queen of Maids MAY COLLECT AND CHARGE THE FULL PRICE OF THE APPOINTMENT. If the customer reschedules their appointment and remedies the condition, 50% of the collected amount may go towards the cost of the newly scheduled appointment.",
+               "answer": "All appointments must allow the cleaners to have access to the property during the appointment time.  Customers must also ensure there is electricity and hot water in the home. In addition, the air conditioning in the home must be functioning between the months of April and November. If any of the these conditions are not met by the customer, the cleaners may choose to not complete the service and G&S House Cleaning may collect and charge the full price of the appointment. If the customer reschedules their appointment and remedies the condition, 50% of the collected amount may go towards the cost of the newly scheduled appointment.",
                 "id" : "1"
            },
            {

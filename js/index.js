@@ -30,12 +30,17 @@ $(document).ready(function(){
 		var $addons = $(".add-div");
 		var $homeDetails = $(".home-details");
 		var $infoServices = $("#infoServices");
+		//Select boxes
+		var $bedSelect = $("#bedroom-select");
+		var $bathSelect = $("#bathroom-select");
 
+		//buttons
+		var $costReset = $("#costReset");
 		//PRICING bindings
 		$occurence.click(occurenceClick);
 		$addons.click(addonClick);
 		$homeDetails.change(homeDetailsChange);
-
+		$costReset.click(resetEstimate);
 		$infoServices.click(showServicesModal);
 				//PRICING functions
 
@@ -49,8 +54,10 @@ $(document).ready(function(){
 			var serviceTotal = parseFloat($serviceTotalSpan.text()); //grabs current total of estimate
 			switch ($this.find("span").text()) {
 				case "One Time": {
-					costCalculate((serviceTotal * 2), 0);
-					oneTimeFlag = true;
+						if(!oneTimeFlag) {
+							costCalculate((serviceTotal * 2), 0);
+							oneTimeFlag = true;
+						}
 					break;
 				}
 				case "Weekly" : {
@@ -134,39 +141,48 @@ $(document).ready(function(){
 		var bedroomFlag, bathroomFlag, sizeFlag = false;
 		var prevBedCost = 0;
 		var prevBathCost = 0;
-		var prevSizeCost = 0;
 		var costOfBedroom = 14.50;
 		var costOfBathroom = 10.50;
 		function homeDetailsChange() {
 			var select = $(this);
+			var value = select.val();
 			var serviceTotal = parseFloat($serviceTotalSpan.text()); //grabs current total of estimate
 			if(oneTimeFlag) {
 				serviceTotal = serviceTotal/2;
 			}
 			switch(select.attr("id")) {
 				case "bedroom-select": {
-					if(bedroomFlag) {
-						serviceTotal -= prevBedCost;
+					if(value != "How many bedrooms?") {
+						if(bedroomFlag) {
+							serviceTotal -= prevBedCost;
+						}
+						var bedroom = parseInt(value.split(" ")[0]);
+						var bedroomCost = bedroom * costOfBedroom;
+						prevBedCost = bedroomCost;
+						
+						costCalculate(serviceTotal, bedroomCost);
+						bedroomFlag = true;
+						
 					}
-					var bedroom = parseInt(select.val().split(" ")[0]);
-					var bedroomCost = bedroom * costOfBedroom;
-					console.log(bedroomCost);
-					prevBedCost = bedroomCost;
-					
-					costCalculate(serviceTotal, bedroomCost);
-					bedroomFlag = true;
+					else {
+						resetBedroomCost(serviceTotal);
+					}
 					break;
 				}
 				case "bathroom-select": {
-					if(bathroomFlag) {
-						serviceTotal -= prevBathCost;
+					if(value != "How many bathrooms?") {
+						if(bathroomFlag) {
+							serviceTotal -= prevBathCost;
+						}
+						var bathroom = parseInt(value.split(" ")[0]);
+						var bathroomCost = bathroom * costOfBathroom;
+						prevBathCost = bathroomCost;
+						costCalculate(serviceTotal, bathroomCost);
+						bathroomFlag = true;
 					}
-					var bathroom = parseInt(select.val().split(" ")[0]);
-					var bathroomCost = bathroom * costOfBathroom;
-					console.log(bathroomCost);
-					prevBathCost = bathroomCost;
-					costCalculate(serviceTotal, bathroomCost);
-					bathroomFlag = true;
+					else {
+						resetBathroomCost(serviceTotal);
+					}
 					break;
 				}
 			}
@@ -179,14 +195,31 @@ $(document).ready(function(){
 			var formattedOutput = total.toFixed(2)
 			$serviceTotalSpan.text(formattedOutput);
 		}
-		function reset() {
+		function resetEstimate() {
 			bathroomFlag = false;
 			bedroomFlag = false;
 			sizeFlag = false;
 			baseBoardFlag = false;
 			fridgeFlag = false;
 			ovenFlag = false;
+			prevBathCost = 0;
+			prevBedCost = 0;
+
+			$bedSelect.val("How many bedrooms?");
+			$bathSelect.val("How many bathrooms?");
+			$(".selected").toggleClass("selected").find("span").toggleClass("selected-text");
+			$serviceTotalSpan.text("0.00");
 			//reset all the values on the estimate
+		}
+		function resetBathroomCost (serviceTotal) {
+			serviceTotal -= prevBathCost;
+			prevBathCost = 0;
+			costCalculate(serviceTotal, 0);
+		}
+		function resetBedroomCost (serviceTotal) {
+			serviceTotal -= prevBedCost;
+			prevBedCost = 0;
+			costCalculate(serviceTotal, 0);
 		}
 
 	//---------------- CONTACT US functions ----------------//
