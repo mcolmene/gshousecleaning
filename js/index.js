@@ -245,6 +245,7 @@ $(document).ready(function(){
 
 		//footer links
 		var $serviceLink = $(".services");
+		var $pricingTool = $(".pricingTool");
 		var $howItWorksLink = $("#howItWorksLink");
 		var $couponsLink = $("#coupons");
 		var $careerLink = $("#careers");
@@ -257,10 +258,14 @@ $(document).ready(function(){
 		$howItWorksLink.click(showTab);
 		$contactLink.click(showTab);
 		$faqLink.click(showTab);
+		$pricingTool.click(showTool);
 
 		$careerLink.click(showCareerModal);
 		$serviceLink.click(showServicesModal)
-
+		function showTool() {
+			$(".nav-pills a[href='#pricing']").tab('show');
+			$("body").scrollTop(0);
+		}
 		//footer functions
 		function showTab() {
 			var tab = $(this).attr("id");
