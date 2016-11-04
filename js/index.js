@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	// $("#btn").click(function(){
+	// 	$(".pricingHeaders").css("z-index", -1);
+	// })
 	if($(window).width() < 768) {
     	$(".listItems").attr("data-toggle", "collapse");
     	$(".listItems").attr("data-target", ".navbar-collapse");
@@ -36,6 +39,22 @@ $(document).ready(function(){
 
 		//buttons
 		var $costReset = $("#costReset");
+		var $scrollDownBtn = $("#scrollDownBtn");
+
+		$scrollDownBtn.click(scrollDownClick);
+
+		function scrollDownClick() {
+			$("body").animate({scrollTop : 500},'slow');
+			$scrollDownBtn.hide();
+		}
+		$(window).scroll(function(){
+			if($(window).scrollTop() == 0 && $(window).width() >= 830) {
+				$scrollDownBtn.show();
+			}
+			else {
+				$scrollDownBtn.hide();
+			}
+		})
 		//PRICING bindings
 		$occurence.click(occurenceClick);
 		$addons.click(addonClick);
