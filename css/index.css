@@ -61,7 +61,7 @@ nav {
 	#parallax-2 {
 		background-image: url("../images/rsz_aboutus.jpg");
 		min-height: 600px;
-		background-position: 38% 15%;
+		background-position: center;
 	}
 	#businessName {	
     font-family: GillSans-Italic;
