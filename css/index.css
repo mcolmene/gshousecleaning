@@ -53,14 +53,15 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-overflow-scrolling: touch;
 	}
 	#parallax-1 {
 		background-image: url("../images/main-pic-4.jpg");
-		height: 400px;
+		min-height: 400px;
 	}
 	#parallax-2 {
 		background-image: url("../images/rsz_aboutus.jpg");
-		height: 800px;
+		min-height: 600px;
 		background-position: 38% 15%;
 	}
 	#businessName {	
