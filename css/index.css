@@ -41,16 +41,18 @@ nav {
 
 
 		background-image: url("../images/main-pic-2.png");
-		height: 300px;
+		height: 250px;
 		width: 100%;
 		background-repeat: no-repeat;
 
 			}
 			#parallax-1, #parallax-2{
 		opacity: .5;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
+	    background-size: 100% 100%;
+    min-height: 400px;
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
 	}
 	#parallax-1 {
 		background-image: url("../images/main-pic-4.jpg");
@@ -60,8 +62,8 @@ nav {
 	}
 	#parallax-2 {
 		background-image: url("../images/rsz_aboutus1.jpg");
-		min-height: 600px;
-		background-position: top;
+		
+		background-position: center;
 	}
 	#businessName {	
     font-family: GillSans-Italic;
@@ -179,7 +181,7 @@ nav {
 	#parallax-1 {
 		background-image: url("../images/main-pic-4.jpg");
 		min-height: 400px;
-		
+
     background-position: center;
 	}
 	#parallax-2 {
