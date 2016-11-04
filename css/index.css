@@ -53,7 +53,6 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-overflow-scrolling: touch;
 	}
 	#parallax-1 {
 		background-image: url("../images/main-pic-4.jpg");
@@ -89,8 +88,20 @@ nav {
 }
 }
 @media screen and (min-width: 660px) and (max-width: 830px){
+	#mainPicture {
+		    position: relative;
+    background-position: center;
+
+
+		background-image: url("../images/main-pic1.png");
+		height: 100vh;
+		width: 100%;
+		background-repeat: no-repeat;
+
+			}
 	.subpics {
-		min-height: 150px;
+		min-height: 250px;
+		width: 100%;
 	}
 		#businessName {	
     font-family: GillSans-Italic;
