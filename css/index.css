@@ -56,11 +56,11 @@ nav {
 	}
 	#parallax-1 {
 		background-image: url("../images/main-pic-4.jpg");
-		min-height: 400px;
+		height: 400px;
 	}
 	#parallax-2 {
 		background-image: url("../images/rsz_aboutus.jpg");
-		min-height: 300px;
+		height: 800px;
 		background-position: 38% 15%;
 	}
 	#businessName {	
