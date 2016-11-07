@@ -513,7 +513,10 @@ footer {
     color: #0595cc; /* Or a color you prefer */
 
 }
-
+.rating-star {
+	color: yellow;
+	text-shadow: 0px 1px 4px orange
+}
 @media screen and (min-width: 660px) and (max-width: 830px){
 	
 	#guranteeContainer {

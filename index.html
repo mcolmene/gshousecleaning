@@ -58,7 +58,7 @@
 			    <div class="container">
 			    	<h3 class="center">Our Residential Cleaning Service</h3>
 			    		<div class="row">
-						  <div class="col-xs-6 col-sm-6 col-md-6 hvr-float hvr-fade">
+						  <div class="col-xs-6 col-sm-6 col-md-6 hvr-float">
 						  	<br>
 						    <div class="thumbnail">
 						      <img class="subpics" src="images/subpic1.png" alt="...">
@@ -67,7 +67,7 @@
 						      </div>
 						    </div>
 						  </div>
-						  <div class="col-xs-6 col-sm-6 col-md-6 hvr-float hvr-fade">
+						  <div class="col-xs-6 col-sm-6 col-md-6 hvr-float">
 						  <br>
 						    <div class="thumbnail">
 						      <img class="subpics" src="images/subpic2.jpg" alt="...">
@@ -138,7 +138,8 @@
 					   	</div>
 					  </div>
 					  <br><br>
-				   	
+				   	<div class="row well well-md" id="reviewsSection">
+				   	</div>
 				   	<!-- <div class="row well well-md">
 				   		<div class="center">
 					   		<h3 class="">Book your cleaning service today!</h3>
@@ -684,23 +685,37 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/dust-full.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/dust" id="couponsTemplate">
-    <h3 class="center">{couponHeader}</h3>
-    
-    <div class="row" id="couponContainer">
-    {#coupons}
-		<div class="col-xs-12 col-md-6 coupons">
-			<h1 class="center">{couponValue}</h1>
-			<h3 class="center">{coupon}</h3>
-			<p>{description}</p>
+    <!--Review template-->
+    <script type="text/dust" id="reviewsTemplate">
+	    <h1 class="center">What our customers are saying</h1>
+	    
+	    <div class="row" id="reviewsContainer">
+	    {#.}
+			<div class="col-xs-12 col-md-6">
+				<h1 class="center">{customerName}</h1>
+				<h3 class="center"><span class="glyphicon glyphicon-star rating-star"></span><span class="glyphicon glyphicon-star rating-star"></span><span class="glyphicon glyphicon-star rating-star"></span><span class="glyphicon glyphicon-star rating-star"></span><span class="glyphicon glyphicon-star rating-star"></span></h3>
+				<p>{review}</p>
+			</div>
+		{/.}
 		</div>
+    </script>
 
-	<div class="col-xs-12 hidden-md hidden-lg hidden-xl"><br></div>
-	{/coupons}
-	</div>
-	<div class="row"><p id="desclaimer">{desclaimer}</p></div>
-	
+    <!--Coupon template-->
+    <script type="text/dust" id="couponsTemplate">
+	    <h3 class="center">{couponHeader}</h3>
+	    
+	    <div class="row" id="couponContainer">
+	    {#coupons}
+			<div class="col-xs-12 col-md-6 coupons">
+				<h1 class="center">{couponValue}</h1>
+				<h3 class="center">{coupon}</h3>
+				<p>{description}</p>
+			</div>
 
+		<div class="col-xs-12 hidden-md hidden-lg hidden-xl"><br></div>
+		{/coupons}
+		</div>
+		<div class="row"><p id="desclaimer">{desclaimer}</p></div>
     </script>
     <script type="text/dust" id="faqsTemplate">
     <div class="col-xs-12 col-md-6">
@@ -795,6 +810,7 @@
     </script>
    <script type="text/javascript" src="js/faqs.js"></script>
    <script type="text/javascript" src="js/coupons.js"></script>
+   <script type="text/javascript" src="js/reviews.js"></script>
    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
