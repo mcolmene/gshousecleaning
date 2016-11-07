@@ -524,6 +524,7 @@ footer {
 	height: 320px;
 }
 .servicesDiv ul li:before {
+	list-style-type: circle;
  	padding-right: 4px;
     color: #0595cc; /* Or a color you prefer */
 
