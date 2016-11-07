@@ -541,7 +541,10 @@ footer {
 }
 @media screen and (min-width: 830px) {
 	.servicesDiv ul li {
-		font-size: 14px;
+		list-style-type: disc;
+    font-size: 14px;
+    padding-left: 0px;
+    margin-left: 10px;
 	}
 }
 .
