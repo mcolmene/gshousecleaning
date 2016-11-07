@@ -513,28 +513,20 @@ footer {
     color: #0595cc; /* Or a color you prefer */
 
 }
-@media screen and (max-width: 660px) {
-	.servicesDiv ul li {
-		font-size: 13px;
-	}
-}
+
 @media screen and (min-width: 660px) and (max-width: 830px){
-	.servicesDiv ul li {
-		font-size: 13px;
-	}
+	
 	#guranteeContainer {
 		    min-height: 257px;
 	}
 }
-@media screen and (min-width: 830px) {
-	.servicesDiv ul li {
-		list-style-type: disc;
+
+.servicesDiv ul li {
+	list-style-type: disc;
     font-size: 14px;
     padding-left: 0px;
     margin-left: 10px;
 	}
-}
-.
 .servicesDiv h4 {
 	color : #0054a6;
 }
