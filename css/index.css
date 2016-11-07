@@ -174,7 +174,6 @@ nav {
     background-size: cover;
 	}
 	#parallax-1, #parallax-2{
-		opacity: .5;
 	background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -358,8 +357,11 @@ footer {
     margin-left: 30px;
 }
 .coupons {
-		min-height: 225px !important;
+		min-height: 250px !important;
 }
+#desclaimer{
+		padding: 5px 15px
+	}
 }
 
 .servicesContainer{
@@ -374,6 +376,7 @@ footer {
 .stepSubDetails {
 	    padding: 0px 10px;
 }
+
 
 @media screen and (max-width: 660px) {
 	#bedroom-select {

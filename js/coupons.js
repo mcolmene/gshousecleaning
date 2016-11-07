@@ -9,9 +9,9 @@ var src = document.getElementById('couponsTemplate').textContent;
     			"description" : "Set up your first cleaning with us and you will get 10% off your total cleaning services!"
     		},
     		{
-    			"couponValue" : "$20.00",
+    			"couponValue" : "$10.00",
     			"coupon" : "Off your next cleaning service",
-    			"description" : "Refer a friend or a family member to our services and we will take off 20 dollars off your next cleaning!"
+    			"description" : "Refer a friend or a family member to our services and we will take off 10 dollars off your next cleaning when they book their service!"
     		}
     	],
     	"desclaimer" : "*coupons are subject to change and deemed invalid under certain circumstances. Please consult with our office. Must present this coupon before service begins."
