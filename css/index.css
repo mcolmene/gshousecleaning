@@ -47,7 +47,6 @@ nav {
 
 			}
 			#parallax-1, #parallax-2{
-		opacity: .5;
 	/*background-attachment: fixed;*/
 	    background-size: 100% 100%;
     min-height: 400px;
@@ -96,7 +95,7 @@ nav {
 
 
 		background-image: url("../images/main-pic1.png");
-		height: 100vh;
+		height: 60vh;
 		width: 100%;
 		background-repeat: no-repeat;
 
@@ -113,21 +112,23 @@ nav {
     font-size: 25px;
 }
 #parallax-1, #parallax-2{
-		opacity: .5;
-	background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+		/*
+	background-attachment: fixed;*/
+    background-repeat: no-repeat;/*
+    background-size: cover;*/
 	}
 	#parallax-1 {
 		background-image: url("../images/main-pic-4.jpg");
-		min-height: 400px;
+		min-height: 250px;
 
     background-position: center;
 	}
 	#parallax-2 {
-		background-image: url("../images/FullSizeRender.jpg");
-		min-height: 600px;
-		background-position: 50% 15%;
+		background-image: url("../images/rsz_aboutus1.jpg");
+		min-height: 250px;
+		background-position: center;
+
+		background-size: 45% 100%;
 	}
 	.navbar-brand {
 		padding-top: 5px !important;
@@ -298,7 +299,7 @@ footer {
 
 }
 	#couponsDiv {
-		height: 700px;
+		height: 100%;
 	}
 	@media screen and (max-width: 660px) {
 .carousel-img{
@@ -307,31 +308,7 @@ footer {
 	}
 		
 	}
-	
-@media screen and (min-width: 368px){
-	#couponsDiv {
-		height: 650px;
-	}
 
-}
-@media screen and (min-width: 736px){
-	#couponsDiv {
-		height: 460px;
-	}
-}
-@media screen and (min-width: 768px){
-	#couponsDiv {
-		height: 500px;
-	}
-}
-@media screen and (min-width: 992px){
-	#couponsDiv {
-		height: 360px;
-	}
-	.coupons {
-		min-height: 225px !important;
-}
-}
 @media screen and (max-width: 660px) {
 	.headerPhotos {
 		opacity: .5;
@@ -345,8 +322,6 @@ footer {
 }
 .imageBackground {
 	background-color: black;
-}
-#couponBody{
 }
 /*CSS for how it works*/
 @media screen and (max-width: 660px) {
@@ -363,6 +338,12 @@ footer {
 		position: relative;
 		top: -75px;
 	}
+	#desclaimer{
+		padding: 0px 10px
+	}
+	 #couponContainer  {
+	 	padding: 0px 20px
+	 }
 }
 @media screen and (min-width: 830px) {
 	.pricingHeaders {
@@ -375,6 +356,9 @@ footer {
     width: 30%;
     text-align: left;
     margin-left: 30px;
+}
+.coupons {
+		min-height: 225px !important;
 }
 }
 
@@ -537,6 +521,9 @@ footer {
 @media screen and (min-width: 660px) and (max-width: 830px){
 	.servicesDiv ul li {
 		font-size: 13px;
+	}
+	#guranteeContainer {
+		    min-height: 257px;
 	}
 }
 @media screen and (min-width: 830px) {

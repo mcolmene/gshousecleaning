@@ -346,8 +346,8 @@
 		    			<hr>
 		    			<p id="estimateDisclaimer">*Prices that are calculated through the estimator is not the actual cost. Actual cost comes after setting appointment and getting your home evaluated. Also weekly, bi-weekly, and monthly cost estimate does not reflect the initial cost of starting your service. If choosing a recurrance service, the first service is double what the estimator will show. Then your recurring payment for the cleaning service will be what is shown in the estimator. The estimates are close to what the actual price will be. Call now for more information (602) 332-3259.
 		    		</div>
-		    		<div class="col-xs-12 col-md-3">
-		    			<div class="col-md-12" id="summaryContainer">
+		    		<div class="col-xs-12 col-sm-12 col-md-3">
+		    			<div class="col-sm-6 col-md-12" id="summaryContainer">
 			    			<div class="col-md-12 center" >
 			    				<h3 class="center">Service Summary</h3>
 			    				<hr>
@@ -361,7 +361,7 @@
 			    				<div class="row"><button class="btn btn-primary form-control" id="costReset">Reset Estimate</button></div>
 			    			</div>
 		    			</div>
-		    			<div class="col-md-12" id="guranteeContainer">
+		    			<div class="col-sm-6 col-md-12" id="guranteeContainer">
 			    			<div class="col-md-12 center">
 			    				<i class="fa fa-check-square-o add-icons"></i>
 			    				<h3 class="center">100% Guaranteed</h3>
@@ -686,16 +686,20 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/dust" id="couponsTemplate">
     <h3 class="center">{couponHeader}</h3>
+    
+    <div class="row" id="couponContainer">
     {#coupons}
-	<div class="col-xs-12 col-md-6 coupons">
-		<h1 class="center">{couponValue}</h1>
-		<h3 class="center">{coupon}</h3>
-		<p>{description}</p>
-	</div>
+		<div class="col-xs-12 col-md-6 coupons">
+			<h1 class="center">{couponValue}</h1>
+			<h3 class="center">{coupon}</h3>
+			<p>{description}</p>
+		</div>
+
 	<div class="col-xs-12 hidden-md hidden-lg hidden-xl"><br></div>
 	{/coupons}
-	<div class="col-md-12 hidden-xs hidden-sm"><br></div>
-	<p>{desclaimer}</p>
+	</div>
+	<div class="row"><p id="desclaimer">{desclaimer}</p></div>
+	
 
     </script>
     <script type="text/dust" id="faqsTemplate">
