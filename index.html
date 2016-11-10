@@ -12,6 +12,14 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
   </head>
   <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1217399388317631";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   	<nav class="navbar navbar-inverse">
 	  	<div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -140,6 +148,8 @@
 					  <br><br>
 				   	<div class="row well well-md" id="reviewsSection">
 				   	</div>
+			           		<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fgandshc%2F&width=45&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId=1217399388317631" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			           		<div class="fb-comments" data-href="http://www.gshousecleaning.com" data-numposts="5"></div>
 				   	<!-- <div class="row well well-md">
 				   		<div class="center">
 					   		<h3 class="">Book your cleaning service today!</h3>
@@ -270,10 +280,20 @@
 	    							<option>6 bathrooms</option>
 	    						</select>
 	    					</div>
-	    					<div class="hidden-md hidden-lg col-xs-12">
-		    					<br>
-		    				</div>
-	    					
+	    					<div class="col-xs-12 col-sm-5 col-md-4">
+	    						<select class="form-control home-details" id="room-select" data-toggle="tooltip" data-placement="top" title="This includes living rooms, dens, office rooms, etc...">
+	    							<option>How many rooms?</option>
+	    							<option>1 room</option>
+	    							<option>2 rooms</option>
+	    							<option>3 rooms</option>
+	    							<option>4 rooms</option>
+	    							<option>5 rooms</option>
+	    							<option>6 rooms</option>
+	    							<option>7 rooms</option>
+	    							<option>8 rooms</option>
+	    							<option>9 rooms</option>
+	    						</select>
+	    					</div>
 		    			</div>
 		    			<hr>
 		    			<div class="row">
@@ -541,9 +561,13 @@
        			</div>
        			<div class="row">
 	           		<div class="center">
-		           		<a href="http://www.facebook.com/GandSHC" class="hvr-grow"><img src="images/fb-circle-45.png" style="padding-right:15px;"></a>
-		           		<!-- <a href="https://www.instagram.com/G_and_S_House_Cleaning/?hl=en" class="hvr-grow"><img src="images/insta-circle-45.png" style="padding-right:15px;"></a>
-		           		<a href="https://twitter.com/GSHouseCleaning" class="hvr-grow"><img src="images/twit-circle.png"></a> -->
+	           			<div class="row">
+	           				<div class="col-md-3">
+			           		<a href="http://www.facebook.com/GandSHC" class="hvr-grow"><img src="images/fb-circle-45.png" style="padding-right:15px;"></a>
+			           		</div>
+			           		<!-- <a href="https://www.instagram.com/G_and_S_House_Cleaning/?hl=en" class="hvr-grow"><img src="images/insta-circle-45.png" style="padding-right:15px;"></a>
+			           		<a href="https://twitter.com/GSHouseCleaning" class="hvr-grow"><img src="images/twit-circle.png"></a> -->
+			           	</div>
 		           	</div>
 		           	<br>
 		        </div>
@@ -653,7 +677,7 @@
 		    						<li>Clean countertops</li>
 		    						<li>Clean appliance exteriors</li>
 		    						<li>Clean/wipe cabinet doors</li>
-		    						<li>Clean inside mcirowave</li>
+		    						<li>Clean inside microwave</li>
 		    						<li>Wash floor</li>
 		    						<li>Load Dishwasher</li>
 		    					</ul>
@@ -682,6 +706,7 @@
 		<!--Career Modal End-->
     <!--MODAL SECTION END-->
     <script src="js/jquery.min.js"></script>
+    
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/dust-full.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

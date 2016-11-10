@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	// $("#btn").click(function(){
 	// 	$(".pricingHeaders").css("z-index", -1);
 	// })
@@ -36,6 +37,7 @@ $(document).ready(function(){
 		//Select boxes
 		var $bedSelect = $("#bedroom-select");
 		var $bathSelect = $("#bathroom-select");
+		var $roomSelect = $("#room-select")
 
 		//buttons
 		var $costReset = $("#costReset");
@@ -157,10 +159,12 @@ $(document).ready(function(){
 			}
 		};
 	   
-		var bedroomFlag, bathroomFlag, sizeFlag = false;
+		var bedroomFlag, bathroomFlag, roomFlag, sizeFlag = false;
 		var prevBedCost = 0;
 		var prevBathCost = 0;
+		var prevRoomCost = 0;
 		var costOfBedroom = 14.50;
+		var costOfRoom = 10.00;
 		var costOfBathroom = 10.50;
 		function homeDetailsChange() {
 			var select = $(this);
@@ -204,6 +208,22 @@ $(document).ready(function(){
 					}
 					break;
 				}
+				case "room-select": {
+					if(value != "How many rooms?") {
+						if(roomFlag) {
+							serviceTotal -= prevRoomCost;
+						}
+						var room = parseInt(value.split(" ")[0]);
+						var roomCost = room * costOfRoom;
+						prevRoomCost = roomCost;
+						costCalculate(serviceTotal, roomCost);
+						roomFlag = true;
+					}
+					else {
+						resetRoomCost(serviceTotal);
+					}
+					break;
+				}
 			}
 		};	
 		function costCalculate(serviceTotal, itemCost) {
@@ -238,6 +258,11 @@ $(document).ready(function(){
 		function resetBedroomCost (serviceTotal) {
 			serviceTotal -= prevBedCost;
 			prevBedCost = 0;
+			costCalculate(serviceTotal, 0);
+		}
+		function resetRoomCost (serviceTotal) {
+			serviceTotal -= prevRoomCost;
+			prevRoomCost = 0;
 			costCalculate(serviceTotal, 0);
 		}
 
