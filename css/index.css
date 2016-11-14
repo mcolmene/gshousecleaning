@@ -278,6 +278,10 @@ textarea {
 	resize: none;
 }
 html {
+	margin: 0px;
+	padding: 0px;
+	overflow-x:hidden;
+	width: 100%;
     position: relative;
     min-height: 85%;
 }
