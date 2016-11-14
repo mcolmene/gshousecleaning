@@ -395,7 +395,7 @@ footer {
 
 
 @media screen and (max-width: 660px) {
-	#bedroom-select {
+	#bedroom-select, #bathroom-select {
 		margin-bottom: 15px;
 	}
 	.pricingHeaders {
