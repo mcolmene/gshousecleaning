@@ -277,7 +277,8 @@ a:active, .faq-links{
 textarea { 
 	resize: none;
 }
-html {
+
+#html {
 	margin: 0px;
 	padding: 0px;
 	overflow-x:hidden;
@@ -285,7 +286,7 @@ html {
     position: relative;
     min-height: 85%;
 }
-body {
+#body {
     margin: 0 0 100px; /* bottom = footer height */
 }
 footer {
